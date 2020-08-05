@@ -38,15 +38,15 @@ Durante o desenvolvimento, foi ensinado sobre relacionamento `Many to Many`, uti
     $ yarn start
 ```
 
-## Funcionalidades
+## ☑️ Funcionalidades
 
-[] Cadastro de Users
-[] Autenticacao de Users
-[] Cadastro de Permissões
-[] Cadastro de Roles
-[] Cadastro de Produtos
-[] Relacionamento User_Roles
-[] Relacionamento Permission_Roles
+[ ] Cadastro de Users <br/>
+[ ] Autenticacao de Users<br/>
+[ ] Cadastro de Permissões<br/>
+[ ] Cadastro de Roles<br/>
+[ ] Cadastro de Produtos<br/>
+[ ] Relacionamento User_Roles<br/>
+[ ] Relacionamento Permission_Roles<br/>
 
 ---
 
