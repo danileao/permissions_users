@@ -7,6 +7,10 @@ import User from "../models/User";
 async function decoder(request: Request): Promise<User | undefined> {
   const authHeader = request.headers.authorization || "";
   const userRepository = getCustomRepository(UserRepository);
+  
+  if (!authHeader) {
+    return undefined;
+  }
 
   const [, token] = authHeader?.split(" ");
 
@@ -26,6 +30,10 @@ function is(role: String[]) {
     next: NextFunction
   ) => {
     const user = await decoder(request);
+    
+    if (!user) {
+      return response.status(401).json({ message: 'Invalid Token' });
+    }
 
     const userRoles = user?.roles.map((role) => role.name);
 
